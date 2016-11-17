@@ -4,8 +4,14 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <svg id="canvas" width="100%" viewBox="0 0 400 800" style="background: green">
-    <image id="Player" x="175" y="20" width="75" height="5" xlink:href="https://i.ytimg.com/vi/g8bBFLcT9z4/hqdefault.jpg">
-    </svg>
+    <svg id="canvas" width="100%" viewBox="0 0 800 400" style="background: green">
+    <image id="Player" x="175" y="40" width="20" height="20" xlink:hr="https://i.ytimg.com/vi/g8bBFLcT9z4/hqdefault.jpg"/>
+
+  <image id="ghostimage" x="300" y="20" width="50" height="50" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/763485/ghost.png">
+    <animate id="ghost1" attributeName="x" from="300" to="100" dur="7s" begin="0s; ghost2.end"/>
+    <animate id="ghost2" attributeName="x" from="100" to="300" dur="7s" begin="ghost1.end"/>
+  </image>
+</svg>
+    <script src="Game.js"></script>
   </body>
 </html>
